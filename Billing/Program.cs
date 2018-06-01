@@ -12,7 +12,7 @@ namespace Billing
         {
             Console.Title = "Billing";
 
-            var endpointConfiguration = ConfigurationHelper.GetLearningConfiguration("Billing");
+            var endpointConfiguration = ConfigurationHelper.GetSqlConfiguration("Billing");
 
             var endpointInstance = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);

@@ -14,7 +14,7 @@ namespace ClientUI
         {
             Console.Title = "ClientUI";
 
-            var endpointConfiguration = ConfigurationHelper.GetLearningConfiguration"ClientUI", out var transport);
+            var endpointConfiguration = ConfigurationHelper.GetLearningConfiguration("ClientUI", out var transport);
 
             var routing = transport.Routing();
             routing.RouteToEndpoint(typeof(PlaceOrder), "Sales");

@@ -12,7 +12,7 @@ namespace Sales
         {
             Console.Title = "Sales";
 
-            var endpointConfiguration = ConfigurationHelper.GetLearningConfiguration"Sales");
+            var endpointConfiguration = ConfigurationHelper.GetLearningConfiguration("Sales");
 
             var endpointInstance = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);
