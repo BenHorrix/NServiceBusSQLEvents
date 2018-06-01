@@ -12,9 +12,7 @@ namespace Billing
         {
             Console.Title = "Billing";
 
-            var endpointConfiguration = ConfigurationHelper.GetSqlConfiguration("Billing");
-
-            var transport = endpointConfiguration.UseTransport<LearningTransport>();
+            var endpointConfiguration = ConfigurationHelper.GetLearningConfiguration("Billing");
 
             var endpointInstance = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);

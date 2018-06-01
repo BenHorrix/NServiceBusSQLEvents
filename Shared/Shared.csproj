@@ -50,6 +50,9 @@
     <PackageReference Include="NServiceBus.Persistence.Sql">
       <Version>4.1.1</Version>
     </PackageReference>
+    <PackageReference Include="NServiceBus.Persistence.Sql.MsBuild">
+      <Version>4.1.1</Version>
+    </PackageReference>
     <PackageReference Include="NServiceBus.SqlServer">
       <Version>4.0.0</Version>
     </PackageReference>

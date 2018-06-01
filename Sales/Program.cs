@@ -12,9 +12,7 @@ namespace Sales
         {
             Console.Title = "Sales";
 
-            var endpointConfiguration = ConfigurationHelper.GetSqlConfiguration("Sales");
-
-            var transport = endpointConfiguration.UseTransport<LearningTransport>();
+            var endpointConfiguration = ConfigurationHelper.GetLearningConfiguration"Sales");
 
             var endpointInstance = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);

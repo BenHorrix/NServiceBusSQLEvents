@@ -12,9 +12,7 @@ namespace Shipping
         {
             Console.Title = "Shipping";
 
-            var endpointConfiguration = ConfigurationHelper.GetSqlConfiguration("Shipping");
-
-            var transport = endpointConfiguration.UseTransport<LearningTransport>();
+            var endpointConfiguration = ConfigurationHelper.GetLearningConfiguration("Shipping");
 
             var endpointInstance = await Endpoint.Start(endpointConfiguration)
                 .ConfigureAwait(false);
